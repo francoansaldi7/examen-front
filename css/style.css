@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    }
+
+
+
+:root {
+    --rojoBrillante: rgb(242, 95, 58);
+    --azulOscuro: rgb(35, 44, 81);
+    --azulGrisáceoOscuro: rgb(143, 148, 167);
+    --azulMuyOscuro: rgb(29, 30, 37);
+    --rojoMuyPálido: rgb(255, 239, 234);
+    --varianteGrisClaro: rgb(249,249,249);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+
+}
+
+.nav-links a {
+    color: #242E52;
+    text-decoration: none;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.home {
+    display: flex;
+    margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
+}
+
+.home p {
+    font-weight: 500;
+    font-size: 1.03rem;
+    margin: 1.75rem 0px;
+    line-height: 157.1%;
+    width: 23.12rem;
+    color: var(--azulGrisáceoOscuro);
+}
+
+body {
+    background-image: url("../img/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: 62.5rem -12.5rem ;
+
+}
+main{
+    background-image: url("../img/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: -31.25rem 62.5rem ;
+
+}
+
+.botonnaranjita {
+        background-color: rgb(242, 95, 58);
+        width: 8.37em;
+        height: 2.75em;
+        border-radius: 3em;
+        color: var(--varianteGrisClaro);
+        border: none;
+        box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+
+h1 {
+    width: 439px;
+    height: 198px;
+    
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 66px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.035em;
+    
+    color: #232C50;
+}
+
+p {
+    width: 350px;
+    height: 71px;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.5584px;
+    line-height: 157.1%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+
+.aboutus {
+    margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
+}
+
+.ventajasnosotros {
+    margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
+}
+
+footer {
+    margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
+
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #FAFAFA;
+}
+
+.cards img {
+    width: 4.37rem;
+    height: 4.37rem;
+    position: relative;
+    top: -2.18rem;
+
+}
+
+.terceraSeccion div {
+    display: flex;
+    margin-bottom: 8rem;
+}
+
+.naranja {
+    background-color: var(--rojoBrillante);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.naranja h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--varianteGrisClaro);
+}
+
+.botonblanco {
+    background-color:  #FFFFFF;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    width: 8.37em;
+    height: 2.75em;
+    border-radius: 3rem;
+    color: #F3603B;
+    border: none;
+}
+
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    padding: 4.69rem 9.12rem 4.69rem 10.31rem;
+    background-color:#1E1E26;
+    margin-bottom:0px;
+    height: 15.43rem;
+}
+
+.footerbox1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+    gap: 2.65em;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--varianteGrisClaro);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.redes {
+order: 1;
+}
+
+.redes a {
+    margin: 0rem 0.2rem;
+}
+
+.gobutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 63px;
+    height: 42px;
+    background: #F3603B;
+    border-radius: 50px;
+}
+
+.emailbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 201px;
+    height: 44px;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+
+footer div p {
+    
+    width: 213.85px;
+    height: 19.85px;
+    left: 1060.26px;
+    top: 2566.22px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #8C8C94;
+}
