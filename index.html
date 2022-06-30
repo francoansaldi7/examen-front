@@ -1,47 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <meta charset="utf-8" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
-        <title>Examen</title>
+        <meta name="viewport" content="width=device-width", initial-scale="1" />
         <link href="css/style.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/925379aaa1.js" crossorigin="anonymous"></script>
+        
+        <title>Manage</title>
+    
+
     </head>
 
     <body>
-        <header>
-            <nav>
-                <div>
-                    <img src="img/logo.svg" alt="logo">
-                </div>
-                <div>
-                    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                </div>
 
-            <ul class="nav-links">
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Community</a></li>
+        <!--Sección Header-->
+
+        <header>
+            
+            <div>
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <nav>
+
+                <ul class="nav-links">
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Community</a></li>
             </ul>
+
             </nav>
 
 
-            <button class="botonnaranjita">Get Started</button>
+            <button class="boton">Get Started</button>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"><i class="fa-solid fa-bars"></i></label>
+            
 
         </header>
 
         <main>
+
+            <!--Sección Gráfica-->
 
             <section class="home">
                 <article>
                     <h1>Bring everyone together to build better products.</h1>
                     <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the large team goals in view</p>
 
-                    <button class="botonnaranjita">
+                    <button class="boton">
                         Get Started
                     </button>
                 </article>
@@ -54,25 +66,35 @@
                     
             </section>
 
-            <section>
+            <!--Sección medio-->
+
+            <section class="seccionDos">
+
+                
                 <article class="aboutus">
-                    <h2>What´s different about Manage?</h2>
-                    <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+                    <div>
+                        <h2>What´s different about Manage?</h2>
+                        <p>Manage provides all the functionality your teas needs, without the complexity. Our software is tailor-made for modern digital product teams</p>
+                    </div>
                 </article>
 
-                <article class="ventajasnosotros">
+                <article class="ventajas">
                     <div>
-
-                        <div><button class="botonnaranjita">01</button>
-                        <h3>Track company-wide progress</h3></div>
-
-                        <div><p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p></div>
-
+                        
+                        
+                            <p class="number">01</p>
+                            <h3>Track company-wide progress</h3>
+                        
                     </div>
 
+                            <div>
+                                <p>See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+                            </div>
+
+
                     <div>
 
-                        <div><button class="botonnaranjita">02</button>
+                        <p class="number">02</p>
                         <h3>Advance built-in reports</h3></div>
 
                         <div><p>Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p></div>
@@ -80,15 +102,23 @@
                     </div>
 
                     <div>
-                        <div><button class="botonnaranjita">03</button>
-                        <h3>Everything you need in one place</h3></div>
-                    
-                        <div><p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p></div>
+
+                        <div>
+                            <p class="number">03</p>
+                            <h3>Everything you need in one place</h3>
+                        </div>
+
+                        <div>
+                            <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
+                        </div>
                     
                     </div>
+
                 </article>
 
             </section>
+
+            <!--Sección Cards-->
 
             <section class="terceraSeccion">
                 <h2>What they've said</h2>
@@ -109,14 +139,16 @@
                     <article class="cards">
                         <img src="img/avatar-richard.png" alt="Richard">
                         <h3>Richard Watts</h3>
-                        <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can´t stop recommending them to everyone i talk to!”</p>
+                        <p>“Manage allows us to provide structure and process. It keeps us organized and focused. I can´t stop recommending them to everyone I talk to!”</p>
                     </article>
                 </div>
 
                 <div>
-                <button class="botonnaranjita">Get Started</button>
+                <button class="boton">Get Started</button>
                 </div>
+
             </section>
+
 
             <section class="naranja">
 
@@ -127,42 +159,49 @@
             </section>
         </main>
 
+        <!--Sección Footer-->
+
         <footer>
+            <section class="section1footer">
         <div class="footerbox1">
             <div class="logofooter">
                 <img src="img/logofooter.png" alt="logo footer">
             </div>
 
             <div class="redes">
-                <a href="https://www.facebook.com/" target="_blank"><img src="img/icon-facebook.svg" alt="fb icon"></a>
-                <a href="https://www.youtube.com/" target="_blank"><img src="img/icon-youtube.svg" alt="youtube icon"></a>
-                <a href="https://twitter.com/" target="_blank"><img src="img/icon-twitter.svg" alt="twitter icon"></a>
-                <a href="https://www.pinterest.com/" target="_blank"><img src="img/icon-pinterest.svg" alt="pinterest icon"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="img/icon-instagram.svg" alt="ig icon"></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             </div>
         </div>
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About Us</a></li>
-            </ul>
-
-            <ul>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-
-            <div>
+                <ul class="ul-1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                
+                <ul class="ul-2">
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+        
+            <div class="formgo">
                 <form action="#" id="email" method="post">
                 <input type="email" placeholder="Update in your ibox..." name="email" class="emailbox">
                 <input  class="gobutton" type="submit" value="Go">
                 </form>
-                <p>Copyright 2020. All Rights Reserved</p>
-            </div>
 
+                
+            </div>
+            </section>
+            <section class="section2footer">
+            <p class="footerp">Copyright 2020. All Rights Reserved</p>
+            </section>
         </footer>
 
     </body>

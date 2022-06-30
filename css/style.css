@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    
     }
-
-
 
 :root {
     --rojoBrillante: rgb(242, 95, 58);
@@ -23,35 +23,44 @@ header {
     display: flex;
     justify-content: space-around;
     height: 50px;
+    min-width: 18.125rem;
     margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
 }
 
-nav {
+nav ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
-
-}
-
-.nav-links a {
-    color: #242E52;
-    text-decoration: none;
-}
-
-.nav-links li {
     list-style: none;
+    gap: 2.65em;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--azulOscuro);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+header nav ul li a:hover{
+    opacity: 50%;
+}
+
+header .fa-solid{
+    display: none;
+    font-size: 1.5rem;
+}
+
+#check {
+    display: none;
 }
 
 .home {
     display: flex;
-    margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4.69rem 9.12rem 4.69rem 10.31rem;
+    gap: 35px;
 }
 
 .home p {
@@ -76,7 +85,7 @@ main{
 
 }
 
-.botonnaranjita {
+.boton {
         background-color: rgb(242, 95, 58);
         width: 8.37em;
         height: 2.75em;
@@ -86,27 +95,27 @@ main{
         box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
+.boton:hover {
+    cursor: pointer;
+    color: black;
+}
 
 h1 {
-    width: 439px;
+    width: 460px;
     height: 198px;
-    
-    font-family: 'Be Vietnam';
     font-style: normal;
     font-weight: 700;
-    font-size: 58px;
-    line-height: 66px;
+    font-size: 3.625rem;
+    line-height: 65px;
     display: flex;
     align-items: center;
     letter-spacing: -0.035em;
-    
     color: #232C50;
 }
 
 p {
     width: 350px;
     height: 71px;
-    font-family: 'Be Vietnam';
     font-style: normal;
     font-weight: 500;
     font-size: 16.5584px;
@@ -117,17 +126,145 @@ p {
 }
 
 
+.seccionDos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 18.125rem;
+    margin: 0px;
+    width: 80%;
+
+}
+
 .aboutus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-around;
+    width: 67%;
+    margin-top: 1rem;
+    
+}
+
+.aboutus h2 {
+width: 433px;
+height: 88px;
+margin-bottom: 30px;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 114.6%;
+display: flex;
+align-items: center;
+color: #232851;
+}
+
+.aboutus p {
+width: 337px;
+height: 88px;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 151.1%;
+display: flex;
+align-items: center;
+color: #B3B2B7;
+}
+
+.ventajas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    justify-content: space-between;
+    width: 30%;
+    min-width: 290px;
+    margin-top: 1rem;
+}
+
+.ventajas h3 {
+    width: 260px;
+    height: 23px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    letter-spacing: -0.015em;
+    color: #323851;
+}
+
+.ventajas p {
+font-style: normal;
+margin-left: 7px;
+font-weight: 500;
+font-size: 16.2984px;
+line-height: 26px;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: -0.01em;
+color: #B3B2B7;
+
+}
+p .number {
+    font-style: normal;
+    margin-left: 7px;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #fff;
+}
+.number {
+    display: inline-block;
+    text-align: center;
+    border: none;
+    background-color: var(--rojoBrillante);
+    color: #fff;
+    position: relative;
+    width: 3.5em;
+    height: 2em;
+    padding: 0.25em;
+    border-radius: 1em;
+    top: 2.75em;
+    right: 4em;
+}
+
+.terceraSeccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
 }
 
-.ventajasnosotros {
-    margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
+.terceraSeccion div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
 }
 
-footer {
-    margin: 4.69rem 9.12rem 4.69rem 10.31rem ;
-
+.terceraSeccion h2 {
+width: 334.41px;
+height: 61px;
+left: 553px;
+top: 1510px;
+font-style: normal;
+font-weight: 700;
+font-size: 37.5px;
+line-height: 156.6%;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+color: #242E53;
+margin-bottom: 115px;
 }
 
 .cards {
@@ -135,7 +272,11 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 10px;
+    width: 445px;
+    height: 219px;
     background-color: #FAFAFA;
+    margin: 10px;
 }
 
 .cards img {
@@ -143,24 +284,55 @@ footer {
     height: 4.37rem;
     position: relative;
     top: -2.18rem;
-
 }
 
-.terceraSeccion div {
-    display: flex;
-    margin-bottom: 8rem;
+.cards h3 {
+width: 80px;
+height: 25px;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 156.6%;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+color: #3F4868;
+}
+
+.cards p {
+width: 390px;
+height: 78px;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+margin: 10px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #B9B9C1;
 }
 
 .naranja {
     background-color: var(--rojoBrillante);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 100%;
+    height: 224px;
+    left: 0px;
+    top: 0px;
 }
 
 .naranja h2 {
     font-weight: 700;
-    font-size: 2.5rem;
+    width: 438px;
+    height: 96px;
+    font-size: 2.3rem;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.005em;
     color: var(--varianteGrisClaro);
 }
 
@@ -174,28 +346,35 @@ footer {
     border: none;
 }
 
+.botonblanco:hover {
+    cursor: pointer;
+    color: black;
+}
 
 footer {
     display:flex;
-    justify-content: space-between;
-    padding: 4.69rem 9.12rem 4.69rem 10.31rem;
+    flex-direction: column;
+    justify-content: space-around;
     background-color:#1E1E26;
     margin-bottom:0px;
-    height: 15.43rem;
+    height: fit-content;
 }
 
 .footerbox1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 30%;
+    min-width: 290px;
 }
 
 footer ul {
     list-style: none;
-    gap: 2.65em;
+    gap: 1em;
     padding: 0px;
     margin: 0px;
-    
+    width: 15%;
+    min-width: 145px;
 }
 
 footer ul li a {
@@ -203,52 +382,264 @@ footer ul li a {
     color: var(--varianteGrisClaro);
     font-weight: 400;
     font-size: 1em;
+    line-height: 38px;
+    
+}
+
+footer ul li a:hover{
+    color: #F3603B;
 }
 
 .redes {
 order: 1;
 }
 
+.redes a i {
+    color: white;
+    font-size: 1.25em;
+}
+
 .redes a {
     margin: 0rem 0.2rem;
 }
 
-.gobutton {
+.redes a i:hover {
+color: #F3603B;
+}
+
+
+.navbarfooter {
+    text-align: left;
     display: flex;
     flex-direction: row;
+    color: white;
+    font-size: 13px;
+    font-weight: 500; 
+    justify-content: space-between;
+    align-items: flex-start; 
+    width: 850px; 
+    height: 150px;
+
+}
+.formgo {
+    width: 30%;
+    min-width: 290px;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 63px;
-    height: 42px;
-    background: #F3603B;
-    border-radius: 50px;
 }
 
-.emailbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-    width: 201px;
-    height: 44px;
-    background: #FFFFFF;
-    border-radius: 50px;
+input[type=submit]{
+    background-color: var(--rojoBrillante);
+    width: 3.9rem;
+    height: 2.6rem;
+    border-radius: 1.875rem;
+    color: var(--varianteGrisClaro);
+    border: none;
+    }
+
+input[type=submit]:hover{
+    color: black;
 }
 
-footer div p {
-    
-    width: 213.85px;
-    height: 19.85px;
-    left: 1060.26px;
-    top: 2566.22px;
+    input[type=email]{
+        border-radius: 1.875rem;
+        border: none;
+        padding:0.6rem;
+    }
+
+    .footerp {
     font-style: normal;
     font-weight: 500;
     font-size: 12.5px;
     line-height: 18px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     color: #8C8C94;
+    padding-top: 50px;
+    width: fit-content;
+    }
+
+    .section1footer {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 2rem;
+        width: 90%;
+    }
+
+    .section2footer {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 15px;
+        right: 230px;
+    }
+
+@media (max-width: 400px) {
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 137%;
+    margin: 40px 170px;
+}
+
+
+nav {
+    display: none;
+}
+
+header .fa-solid{
+    display: initial;
+}
+
+header button {
+    display: none;
+}
+
+.home{
+    flex-direction: column-reverse;
+}
+
+h1 {
+    margin: 35px;
+    padding-bottom: 30px;
+}
+
+.home img{
+    margin-left: -15px;
+}
+
+.home p {
+    margin: 20px 40px;
+    font-size: 1.5rem;
+    width: 460px;
+}
+
+.home button {
+    margin: 30px 190px;
+}
+
+.terceraSeccion h2 {
+    margin-left: 500px;
+    margin-bottom: 55px;
+}
+
+.aboutus {
+    margin-left: 315px;
+}
+
+.aboutus h2 {
+    font-size: 3rem;
+    margin: 30px;
+}
+
+.aboutus p {
+    width: 460px;
+    font-size: 1.4rem;
+    margin-left: 35px;
+    margin-top: 50px;
+}
+
+.ventajas {
+    margin: 50px;
+    margin-left: 220px;
+}
+
+.terceraSeccion div {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 400px;
+}
+
+.cards {
+    margin: 30px;
+    margin-left: 150px;
+}
+
+.terceraSeccion button {
+    margin-top: -50px;
+    margin-left: 120px;
+}
+
+.naranja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 245%;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 245%;
+    height: 100%;
+}
+
+.footerbox1 {
+    order: 2;
+    flex-direction: column-reverse;
+    gap: 55px;
+    position: relative;
+    bottom: 60px;
+    left: 200px;
+    width: 460px;
+}
+
+footer ul {
+    display: block;
+    position: relative;
+    top: 50px;
+}
+
+.formgo {
+    order: -1;
+    position: relative;
+    left: 290px;
+}
+
+.footerp {
+    position: relative;
+    left: 250px;
+}
+
+.ul-1 {
+    
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 50px;
+    left: 230px;
+
+}
+
+.ul-2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 450px;
+    top: -135px;
+}
+
+.footerbox1 a {
+    margin: 20px
+}
+
+.section1footer {
+    display: flex;
+    flex-direction: column;
+}
+
 }
