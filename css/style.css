@@ -46,12 +46,13 @@ header nav ul li a:hover{
     opacity: 50%;
 }
 
-header .fa-solid{
-    display: none;
-    font-size: 1.5rem;
+.menu-icon img {
+    width: 80px;
+    height: 50px;
+    padding: 3px;
 }
 
-#check {
+.menu-icon, #check {
     display: none;
 }
 
@@ -180,7 +181,7 @@ color: #B3B2B7;
     justify-content: space-between;
     width: 30%;
     min-width: 290px;
-    margin-top: 1rem;
+    margin-top: -2rem;
 }
 
 .ventajas h3 {
@@ -189,10 +190,9 @@ color: #B3B2B7;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 23px;
     display: flex;
     align-items: center;
-    margin: 7px;
+    margin: 15px;
     letter-spacing: -0.015em;
     color: #323851;
 }
@@ -200,6 +200,7 @@ color: #B3B2B7;
 .ventajas p {
 font-style: normal;
 margin-left: 7px;
+margin-top: 35px;
 font-weight: 500;
 font-size: 16.2984px;
 line-height: 26px;
@@ -210,18 +211,7 @@ letter-spacing: -0.01em;
 color: #B3B2B7;
 
 }
-p .number {
-    font-style: normal;
-    margin-left: 7px;
-    font-weight: 500;
-    font-size: 16.2984px;
-    line-height: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: -0.01em;
-    color: #fff;
-}
+
 .number {
     display: inline-block;
     text-align: center;
@@ -483,20 +473,63 @@ input[type=submit]:hover{
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
 header {
     display: flex;
     justify-content: space-between;
     width: 137%;
-    margin: 40px 170px;
+    margin: 40px 190px;
 }
 
-
-nav {
-    display: none;
+.checkbtn {
+    display: block;
+    margin: -30px;
 }
 
-header .fa-solid{
-    display: initial;
+.menu-icon {
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+header nav ul {
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: #F3603B;
+    top: 85px;
+    right: 0;
+    text-align: center;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    -webkit-transition: transform 0.5s ease-in;
+    -moz-transition: transform 0.5s ease-in;
+    -ms-transition: transform 0.5s ease-in;
+    -o-transition: transform 0.5s ease-in;
+}
+
+header nav ul li {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    line-height: 25px;
+}
+
+header nav ul li a {
+    font-size: 20px;
+}
+
+#check:checked + .nav-links {
+    left: 0px;
 }
 
 header button {
@@ -508,22 +541,22 @@ header button {
 }
 
 h1 {
-    margin: 35px;
+    margin: 70px;
     padding-bottom: 30px;
 }
 
 .home img{
-    margin-left: -15px;
+    margin-left: 20px;
 }
 
 .home p {
-    margin: 20px 40px;
+    margin: 20px 75px;
     font-size: 1.5rem;
     width: 460px;
 }
 
 .home button {
-    margin: 30px 190px;
+    margin: 40px 225px;
 }
 
 .terceraSeccion h2 {
@@ -532,7 +565,7 @@ h1 {
 }
 
 .aboutus {
-    margin-left: 315px;
+    margin-left: 355px;
 }
 
 .aboutus h2 {
@@ -549,7 +582,7 @@ h1 {
 
 .ventajas {
     margin: 50px;
-    margin-left: 220px;
+    margin-left: 300px;
 }
 
 .terceraSeccion div {
@@ -640,6 +673,10 @@ footer ul {
 .section1footer {
     display: flex;
     flex-direction: column;
+}
+
+.redes:hover {
+    color: #F3603B;
 }
 
 }
